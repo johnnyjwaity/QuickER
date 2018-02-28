@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Quick ER</title>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <link rel="stylesheet" type="text/css" href="MainStyle.css">
+    </head>
+    <body id="body">
+    <h1 id="title" class="center">Quick ER</h1>
+    <h3 class="center secondText" style="margin-bottom: 20px">Please Select Your Symptoms</h3>
+
+    <section>
+        <div class="accordion" style="border-top-left-radius: 8px; border-top-right-radius: 8px;">
+            <input type="checkbox" title="Selected" class="selectionBox">
+            <h2 class="symptom">Bloating</h2>
+        </div>
+        <div class="expandBox expandBox-active">
+            <h3 class="center">Rate Your Pain</h3>
+            <div>
+                <h4 class="rangeMarker">1</h4>
+                <div class="sliderContainer">
+                    <input title="Range" type="range" min="1" max="10" value="5" class="slider" id="Bloating">
+                </div>
+                <h4 class="rangeMarker">10</h4>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <input type="checkbox" title="Selected" class="selectionBox">
+            <h2 class="symptom">Coughing</h2>
+        </div>
+        <div class="expandBox expandBox-active">
+            <h3 class="center">Rate Your Pain</h3>
+            <div>
+                <h4 class="rangeMarker">1</h4>
+                <div class="sliderContainer">
+                    <input title="Range" type="range" min="1" max="10" value="5" class="slider" id="Coughing">
+                </div>
+                <h4 class="rangeMarker">10</h4>
+            </div>
+        </div>
+
+
+        <div class="accordion">
+            <input type="checkbox" title="Selected" class="selectionBox">
+            <h2 class="symptom">Diarrhea</h2>
+        </div>
+        <div class="expandBox expandBox-active">
+            <h3 class="center">Rate Your Pain</h3>
+            <div>
+                <h4 class="rangeMarker">1</h4>
+                <div class="sliderContainer">
+                    <input title="Range" type="range" min="1" max="10" value="5" class="slider" id="Diarrhea">
+                </div>
+                <h4 class="rangeMarker">10</h4>
+            </div>
+        </div>
+
+
+        <div class="accordion">
+            <input type="checkbox" title="Selected" class="selectionBox">
+            <h2 class="symptom">Dizziness</h2>
+        </div>
+        <div class="expandBox expandBox-active">
+            <h3 class="center">Rate Your Pain</h3>
+            <div>
+                <h4 class="rangeMarker">1</h4>
+                <div class="sliderContainer">
+                    <input title="Range" type="range" min="1" max="10" value="5" class="slider" id="Dizziness">
+                </div>
+                <h4 class="rangeMarker">10</h4>
+            </div>
+        </div>
+
+
+        <div class="accordion">
+            <input type="checkbox" title="Selected" class="selectionBox">
+            <h2 class="symptom">Fatigue</h2>
+        </div>
+        <div class="expandBox expandBox-active">
+            <h3 class="center">Rate Your Pain</h3>
+            <div>
+                <h4 class="rangeMarker">1</h4>
+                <div class="sliderContainer">
+                    <input title="Range" type="range" min="1" max="10" value="5" class="slider" id="Fatigue">
+                </div>
+                <h4 class="rangeMarker">10</h4>
+            </div>
+        </div>
+
+
+
+
+        <div class="accordion">
+            <input type="checkbox" title="Selected" class="selectionBox">
+            <h2 class="symptom">Fever</h2>
+        </div>
+        <div class="expandBox expandBox-active">
+            <h3 class="center">Rate Your Pain</h3>
+            <div>
+                <h4 class="rangeMarker">1</h4>
+                <div class="sliderContainer">
+                    <input title="Range" type="range" min="1" max="10" value="5" class="slider" id="Fever">
+                </div>
+                <h4 class="rangeMarker">10</h4>
+            </div>
+
+            <div style="margin-left: 10%;">
+                <p style="display: inline">Temperature:</p>
+                <input type="text" title="temp" style="height: 40px; width: 50px; margin-left: 20px; margin-right: 10px; display: inline">
+                <p style="display: inline">°F</p>
+            </div>
+        </div>
+
+
+        <div class="accordion">
+            <input type="checkbox" title="Selected" class="selectionBox">
+            <h2 class="symptom">Headache</h2>
+        </div>
+        <div class="expandBox expandBox-active">
+            <h3 class="center">Rate Your Pain</h3>
+            <div>
+                <h4 class="rangeMarker">1</h4>
+                <div class="sliderContainer">
+                    <input title="Range" type="range" min="1" max="10" value="5" class="slider" id="Headache">
+                </div>
+                <h4 class="rangeMarker">10</h4>
+            </div>
+            <div style="width: 100%">
+                <p style="width: 50%; margin-right: 10px; padding: 10px">Type</p>
+                <select style="height: 30px; margin: auto">
+                    <option value="none">Please Select</option>
+                    <option value="Pounding">Pounding</option>
+                    <option value="Dull">Dull</option>
+                    <option value="Migraine">Migraine</option>
+                    <option value="Severe">Severe</option>
+                </select>
+            </div>
+            <div>
+                <p style="width: 50%; margin-right: 10px; padding: 10px">Location</p>
+                <select style="height: 30px; margin: auto">
+                    <option value="none">Please Select</option>
+                    <option value="In Back">In Back</option>
+                    <option value="In Front">In Front</option>
+
+                </select>
+            </div>
+            <div>
+                <p style="width: 50%; margin-right: 10px; padding: 10px">Side</p>
+                <select style="height: 30px; margin: auto">
+                    <option value="none">Please Select</option>
+                    <option value="One Side">One Side</option>
+                    <option value="Both Sides">Both Sides</option>
+
+                </select>
+            </div>
+        </div>
+
+
+
+
+        <div class="accordion">
+            <input type="checkbox" title="Selected" class="selectionBox">
+            <h2 class="symptom">Muscle Cramps</h2>
+        </div>
+        <div class="expandBox expandBox-active">
+            <h3 class="center">Rate Your Pain</h3>
+            <div>
+                <h4 class="rangeMarker">1</h4>
+                <div class="sliderContainer">
+                    <input title="Range" type="range" min="1" max="10" value="5" class="slider" id="Muscle Cramps">
+                </div>
+                <h4 class="rangeMarker">10</h4>
+            </div>
+            <div style="width: 100%">
+                <p style="width: 50%; margin-right: 10px; padding: 10px">Location</p>
+                <select style="height: 30px; margin: auto">
+                    <option value="none">Please Select</option>
+                    <option value="Calf">Calf</option>
+                    <option value="Leg">Leg</option>
+                    <option value="Thigh">Thigh</option>
+                    <option value="Torso">Torso</option>
+                    <option value="Palm">Palm</option>
+                </select>
+            </div>
+            <div>
+                <p style="width: 50%; margin-right: 10px; padding: 10px">Time</p>
+                <select style="height: 30px; margin: auto">
+                    <option value="none">Please Select</option>
+                    <option value="Day">Day</option>
+                    <option value="Night">Night</option>
+                    <option value="Both">Both</option>
+                </select>
+            </div>
+
+        </div>
+
+
+
+        <div class="accordion">
+            <input type="checkbox" title="Selected" class="selectionBox">
+            <h2 class="symptom">Nausea</h2>
+        </div>
+        <div class="expandBox expandBox-active">
+            <h3 class="center">Rate Your Pain</h3>
+            <div>
+                <h4 class="rangeMarker">1</h4>
+                <div class="sliderContainer">
+                    <input title="Range" type="range" min="1" max="10" value="5" class="slider" id="Nausea">
+                </div>
+                <h4 class="rangeMarker">10</h4>
+            </div>
+        </div>
+
+
+        <div class="accordion">
+            <input type="checkbox" title="Selected" class="selectionBox">
+            <h2 class="symptom">Throat Irritation</h2>
+        </div>
+        <div class="expandBox expandBox-active">
+            <h3 class="center">Rate Your Pain</h3>
+            <div>
+                <h4 class="rangeMarker">1</h4>
+                <div class="sliderContainer">
+                    <input title="Range" type="range" min="1" max="10" value="5" class="slider" id="Throat Irritation">
+                </div>
+                <h4 class="rangeMarker">10</h4>
+            </div>
+        </div>
+
+    </section>
+
+    <h3 class="center secondText" style="margin-bottom: 20px">Please Select Any Affected Body Parts</h3>
+
+    <section>
+        <div class="accordion">
+            <input type="checkbox" title="Selected" class="selectionBox">
+            <h2 class="symptom">Head</h2>
+        </div>
+        <div class="expandBox expandBox-active">
+            <h3 class="center">Select Injuries</h3>
+
+
+            <div style="width: 100%; float: left">
+                <div style="width: 100%; display: inherit">
+                    <input type="checkbox">
+                    <p style="margin-top: 0px">Hemotoma</p>
+                    <ul>
+                        <li>Headache</li>
+                        <li>Dizziness</li>
+                        <li>Nausea & Vomiting</li>
+                        <li>Fatigue</li>
+                        <li><input type="text" placeholder="Other Symptoms"></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div style="width: 100%; float: left">
+                <div style="width: 100%; display: inherit">
+                    <input type="checkbox">
+                    <p style="margin-top: 0px">Hemorrhange</p>
+                    <ul>
+                        <li>Sudden/Severe Headache</li>
+                        <li>Dizziness</li>
+                        <li>Fatigue</li>
+                        <li>Seizures</li>
+                        <li><input type="text" placeholder="Other Symptoms"></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div style="width: 100%; float: left">
+                <div style="width: 100%; display: inherit">
+                    <input type="checkbox">
+                    <p style="margin-top: 0px">Concussion</p>
+                    <ul>
+                        <li>Headache Or Pressure In Head</li>
+                        <li>Temporary Loss Of Consciousness</li>
+                        <li>Dizziness</li>
+                        <li>Amnesia</li>
+                        <li>Ringing In Ear</li>
+                        <li>Nausea & Vomiting</li>
+                        <li>Slurred Speech</li>
+                        <li>Delayed Response To Questions</li>
+                        <li>Fatigue</li>
+                        <li><input type="text" placeholder="Other Symptoms"></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div style="width: 100%; float: left">
+                <div style="width: 100%; display: inherit">
+                    <input type="checkbox">
+                    <p style="margin-top: 0px">Edema</p>
+                    <ul>
+                        <li>Headache</li>
+                        <li>Neck Pain/Stiffness</li>
+                        <li>Dizziness</li>
+                        <li>Nausea & Vomiting</li>
+                        <li>Irregular Breathing</li>
+                        <li>Vision Loss/Changes</li>
+                        <li>Memory Loss</li>
+                        <li>Inability To Walk</li>
+                        <li>Skull Fracture</li>
+                        <li><input type="text" placeholder="Other Symptoms"></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div style="width: 100%; float: left">
+                <div style="width: 100%; display: inherit">
+                    <input type="checkbox">
+                    <p style="margin-top: 0px">Custom</p>
+                    <ul>
+                        <li><input type="text" placeholder="Symptom"></li>
+                        <li><input type="text" placeholder="Symptom"></li>
+                        <li><input type="text" placeholder="Symptom"></li>
+                        <li><input type="text" placeholder="Symptom"></li>
+                        <li><input type="text" placeholder="Symptom"></li>
+                        <li><input type="text" placeholder="Symptom"></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <div class="accordion">
+            <input type="checkbox" title="Selected" class="selectionBox">
+            <h2 class="symptom">Chest and Abdomen</h2>
+        </div>
+        <div class="expandBox expandBox-active">
+            <h3 class="center">Select Injuries</h3>
+
+
+            <div style="width: 100%; float: left">
+                <div style="width: 100%; display: inherit">
+                    <input type="checkbox">
+                    <p style="margin-top: 0px">Rib Fractures</p>
+                    <ul>
+                        <li>Tenderness</li>
+                        <li>Bruising</li>
+                        <li>Coughing</li>
+                        <li>Shortness Of Breath</li>
+                        <li>Gritty Sensation Over Bones</li>
+                        <li><input type="text" placeholder="Other Symptoms"></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div style="width: 100%; float: left">
+                <div style="width: 100%; display: inherit">
+                    <input type="checkbox">
+                    <p style="margin-top: 0px">Cardiac Tamponade</p>
+                    <ul>
+                        <li>Lightheaded</li>
+                        <li>Heart Palpitations</li>
+                        <li>Shortness Of Breath</li>
+                        <li>Wheezing</li>
+                        <li><input type="text" placeholder="Other Symptoms"></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div style="width: 100%; float: left">
+                <div style="width: 100%; display: inherit">
+                    <input type="checkbox">
+                    <p style="margin-top: 0px">Pulmonary Contusion</p>
+                    <ul>
+                        <li>Shortness Of Breath</li>
+                        <li>Painful Breathing</li>
+                        <li><input type="text" placeholder="Other Symptoms"></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+            <div style="width: 100%; float: left">
+                <div style="width: 100%; display: inherit">
+                    <input type="checkbox">
+                    <p style="margin-top: 0px">Custom</p>
+                    <ul>
+                        <li><input type="text" placeholder="Symptom"></li>
+                        <li><input type="text" placeholder="Symptom"></li>
+                        <li><input type="text" placeholder="Symptom"></li>
+                        <li><input type="text" placeholder="Symptom"></li>
+                        <li><input type="text" placeholder="Symptom"></li>
+                        <li><input type="text" placeholder="Symptom"></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <div class="accordion">
+            <input type="checkbox" title="Selected" class="selectionBox">
+            <h2 class="symptom">Arms & Legs</h2>
+        </div>
+        <div class="expandBox expandBox-active">
+            <h3 class="center">Select Injuries</h3>
+
+
+            <div style="width: 100%; float: left">
+                <div style="width: 100%; display: inherit">
+                    <input type="checkbox">
+                    <p style="margin-top: 0px">Acute Injuries</p>
+                    <ul>
+                        <li>Small Blood Vessels Under Skin Tear Or Rupture</li>
+                        <li>Damage To Ligaments/Sprains</li>
+                        <li>Injuries To Tendons</li>
+                        <li>Pulled Muscles</li>
+                        <li>Muscle Ruptures</li>
+                        <li>Broken Bones and Fractures</li>
+                        <li>Dislocations</li>
+                        <li><input type="text" placeholder="Other Symptoms"></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div style="width: 100%; float: left">
+                <div style="width: 100%; display: inherit">
+                    <input type="checkbox">
+                    <p style="margin-top: 0px">Overuse Injuries</p>
+                    <ul>
+                        <li>Pain and Swelling Between Joints</li>
+                        <li>Pain and Swelling between Muscles and Bones</li>
+                        <li>Pain and Swelling in or around tendons</li>
+                        <li>Hairline cracks in bones Or Stress Fractures</li>
+                        <li>Pressures On Nerves in the Arm/Carpal Tunnel Syndrome</li>
+                        <li><input type="text" placeholder="Other Symptoms"></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div style="width: 100%; float: left">
+                <div style="width: 100%; display: inherit">
+                    <input type="checkbox">
+                    <p style="margin-top: 0px">Custom</p>
+                    <ul>
+                        <li><input type="text" placeholder="Symptom"></li>
+                        <li><input type="text" placeholder="Symptom"></li>
+                        <li><input type="text" placeholder="Symptom"></li>
+                        <li><input type="text" placeholder="Symptom"></li>
+                        <li><input type="text" placeholder="Symptom"></li>
+                        <li><input type="text" placeholder="Symptom"></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <section style="width: 75%; margin: auto; margin-top: 50px">
+        <input type="text" placeholder="Duration Of Symptoms" style="width: 100%; height: 40px; font-size: 20px; padding-right: 0px">
+        <textarea placeholder="Current and Past Conditions" style="width: 100%; height: 100px; margin-top: 20px"></textarea>
+        <textarea placeholder="Current Medication" style="width: 100%; height: 100px; margin-top: 20px"></textarea>
+
+
+
+        <button onclick="calculate()" style="width: 100%; height: 75px; font-size: 50px; border-radius: 2px; -webkit-appearance: none; background-color: white; margin-top: 20px">Submit</button>
+    </section>
+
+
+    <div style="margin: auto; width: 100%">
+        <h2 id="result" class="secondText center"></h2>
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="Main.js"></script>
+    </body>
+</html>

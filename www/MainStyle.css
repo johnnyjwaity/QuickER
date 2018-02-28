@@ -1,0 +1,95 @@
+@font-face {
+    font-family: Renogare;
+    /*src: url("TheLightFont.otf");*/
+    src: url("RenogareSoft-Regular.ttf");
+}
+@font-face {
+    font-family: Light Font;
+    /*src: url("TheLightFont.otf");*/
+    src: url("GeosansLight.ttf");
+}
+
+#title{
+    color: white;
+    font-family: Renogare;
+}
+
+.secondText{
+    color: white;
+    font-family: Renogare;
+}
+#body{
+    background-color: darkblue;
+}
+.center{
+    width: 100%;
+    text-align: center;
+}
+
+.accordion{
+    width: 75%;
+    margin-left: 12.5%;
+    height: 50px;
+    horiz-align: center;
+
+    background-color: white;
+    display: inline-flex;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.expandBox{
+    width: 75%;
+    /*height: 200px;*/
+    max-height: 0;
+    /*height: 0px;*/
+    /*color: black;*/
+    background-color: lightgrey;
+    margin: auto;
+    transition: max-height 0.4s ease-out;
+    overflow: hidden;
+    padding: 0 0px;
+    /*margin-bottom: 10px;*/
+
+}
+
+.expandBox > div{
+    display: flex;
+}
+.selectionBox{
+    height: 75%;
+    zoom: 2;
+
+}
+
+.sliderContainer{
+    width: 100%;
+}
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: darkgrey /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.rangeMarker{
+    margin: 6px;
+}
+
+.symptom{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: "Light Font";
+}
