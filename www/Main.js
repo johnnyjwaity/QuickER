@@ -48,6 +48,9 @@ for(i = 0; i < accordianButtons.length; i++){
 function calculate() {
     var score = 0;
     for(var i = 0; i < selectedSliders.length; i++){
+        if(!document.getElementById(selectedSliders[i])){
+            continue;
+        }
         score += parseInt(document.getElementById(selectedSliders[i]).value);
 
     }
